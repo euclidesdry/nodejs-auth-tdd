@@ -4,4 +4,6 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     password_hash: DataTypes.STRING
   });
+
+  return User;
 };
