@@ -4,12 +4,19 @@
   "main": "index.js",
   "author": "euclidesdry <euclidesdry@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js -ignore __tests__",
+    "test": "jest"
+  },
   "dependencies": {
     "express": "^4.17.2",
     "mysql2": "^2.3.3",
     "sequelize": "^6.12.4"
   },
   "devDependencies": {
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.15",
     "sequelize-cli": "^6.3.0"
   }
 }
