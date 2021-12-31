@@ -13,8 +13,6 @@ describe("Authentication", () => {
       password: "123123",
     });
 
-    console.log(user);
-
     const response = await request(app).post("/sessions").send({
       email: user.email,
       password: "123123",
